@@ -1,0 +1,34 @@
+<mediawiki>
+  <page>
+    <title>Cat</title>
+    <ns>0</ns>
+    <id>100</id>
+    <revision>
+      <text bytes="1234">The '''cat''' is a [[domestication|domestic]] [[species]] of small [[carnivore|carnivorous]] [[mammal]]. See also [[Dog]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>Dog</title>
+    <ns>0</ns>
+    <id>200</id>
+    <revision>
+      <text bytes="999">The '''dog''' is a [[domestication|domesticated]] descendant of the [[wolf]]. See also [[Cat]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>Wikipedia:Manual of Style</title>
+    <ns>4</ns>
+    <id>300</id>
+    <revision>
+      <text bytes="500">This is a Wikipedia namespace page that should be skipped.</text>
+    </revision>
+  </page>
+  <page>
+    <title>Mammal</title>
+    <ns>0</ns>
+    <id>400</id>
+    <revision>
+      <text bytes="800">'''Mammals''' are a group of [[vertebrate]] animals. Includes [[Cat]] and [[Dog]].</text>
+    </revision>
+  </page>
+</mediawiki>
