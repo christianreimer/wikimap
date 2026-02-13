@@ -1,0 +1,187 @@
+<mediawiki>
+  <!-- SCIENCE CLUSTER -->
+  <page>
+    <title>Physics</title>
+    <ns>0</ns>
+    <id>1</id>
+    <revision>
+      <text bytes="500">'''Physics''' is a branch of [[science]] that studies [[matter]], [[energy]], and their interactions. Key areas include [[quantum mechanics]] and [[general relativity]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>Quantum mechanics</title>
+    <ns>0</ns>
+    <id>2</id>
+    <revision>
+      <text bytes="500">'''Quantum mechanics''' is a fundamental theory in [[physics]] describing nature at the [[atom]]ic scale. Related to [[mathematics]] and [[energy]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>General relativity</title>
+    <ns>0</ns>
+    <id>3</id>
+    <revision>
+      <text bytes="500">'''General relativity''' is a theory of gravitation by [[Albert Einstein]], part of [[physics]]. Describes [[gravity]] and [[spacetime]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>Energy</title>
+    <ns>0</ns>
+    <id>4</id>
+    <revision>
+      <text bytes="500">'''Energy''' is a property in [[physics]]. Types include [[kinetic energy]] and potential energy. Related to [[matter]] and [[chemistry]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>Matter</title>
+    <ns>0</ns>
+    <id>5</id>
+    <revision>
+      <text bytes="500">'''Matter''' is any substance with mass. Studied in [[physics]] and [[chemistry]]. Made of [[atom]]s.</text>
+    </revision>
+  </page>
+  <page>
+    <title>Atom</title>
+    <ns>0</ns>
+    <id>6</id>
+    <revision>
+      <text bytes="500">An '''atom''' is the smallest unit of [[matter]]. Studied in [[quantum mechanics]] and [[chemistry]]. Contains [[electron]]s.</text>
+    </revision>
+  </page>
+  <page>
+    <title>Electron</title>
+    <ns>0</ns>
+    <id>7</id>
+    <revision>
+      <text bytes="500">The '''electron''' is a subatomic particle. Studied in [[quantum mechanics]] and [[physics]]. Part of the [[atom]].</text>
+    </revision>
+  </page>
+
+  <!-- BIOLOGY CLUSTER -->
+  <page>
+    <title>Biology</title>
+    <ns>0</ns>
+    <id>10</id>
+    <revision>
+      <text bytes="500">'''Biology''' is the [[science]] of life. Studies [[cell]]s, [[DNA]], [[evolution]], and [[ecology]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>Cell</title>
+    <ns>0</ns>
+    <id>11</id>
+    <revision>
+      <text bytes="500">The '''cell''' is the basic unit of life in [[biology]]. Contains [[DNA]] and [[protein]]s. Studied via [[microscope]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>DNA</title>
+    <ns>0</ns>
+    <id>12</id>
+    <revision>
+      <text bytes="500">'''DNA''' carries genetic information. Central to [[biology]], [[genetics]], and [[evolution]]. Found in [[cell]]s.</text>
+    </revision>
+  </page>
+  <page>
+    <title>Evolution</title>
+    <ns>0</ns>
+    <id>13</id>
+    <revision>
+      <text bytes="500">'''Evolution''' is the change in species over time. Core concept in [[biology]]. Driven by [[natural selection]] and [[DNA]] mutation.</text>
+    </revision>
+  </page>
+  <page>
+    <title>Ecology</title>
+    <ns>0</ns>
+    <id>14</id>
+    <revision>
+      <text bytes="500">'''Ecology''' studies organisms and their environments. Part of [[biology]]. Related to [[evolution]] and [[Earth]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>Genetics</title>
+    <ns>0</ns>
+    <id>15</id>
+    <revision>
+      <text bytes="500">'''Genetics''' is the study of [[DNA]] and heredity. A branch of [[biology]]. Related to [[evolution]].</text>
+    </revision>
+  </page>
+
+  <!-- GEOGRAPHY/HISTORY CLUSTER -->
+  <page>
+    <title>Earth</title>
+    <ns>0</ns>
+    <id>20</id>
+    <revision>
+      <text bytes="500">'''Earth''' is the third planet. Studied in [[geography]] and [[science]]. Has [[ocean]]s and [[continent]]s. Home to [[biology]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>Geography</title>
+    <ns>0</ns>
+    <id>21</id>
+    <revision>
+      <text bytes="500">'''Geography''' studies [[Earth]]'s landscapes. Related to [[history]] and [[science]]. Includes [[ocean]]s and [[continent]]s.</text>
+    </revision>
+  </page>
+  <page>
+    <title>History</title>
+    <ns>0</ns>
+    <id>22</id>
+    <revision>
+      <text bytes="500">'''History''' is the study of past events. Related to [[geography]], [[science]], and [[Albert Einstein]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>Ocean</title>
+    <ns>0</ns>
+    <id>23</id>
+    <revision>
+      <text bytes="500">An '''ocean''' is a large body of water on [[Earth]]. Studied in [[geography]] and [[ecology]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>Albert Einstein</title>
+    <ns>0</ns>
+    <id>24</id>
+    <revision>
+      <text bytes="500">'''Albert Einstein''' developed [[general relativity]] and contributed to [[quantum mechanics]]. A figure in [[history]] and [[physics]].</text>
+    </revision>
+  </page>
+
+  <!-- CHEMISTRY (bridge between clusters) -->
+  <page>
+    <title>Chemistry</title>
+    <ns>0</ns>
+    <id>30</id>
+    <revision>
+      <text bytes="500">'''Chemistry''' is the [[science]] of [[matter]] and [[atom]]s. Related to [[physics]] and [[biology]]. Studies [[protein]]s.</text>
+    </revision>
+  </page>
+  <page>
+    <title>Science</title>
+    <ns>0</ns>
+    <id>31</id>
+    <revision>
+      <text bytes="500">'''Science''' is the systematic study of the world. Branches include [[physics]], [[chemistry]], [[biology]], and [[mathematics]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>Mathematics</title>
+    <ns>0</ns>
+    <id>32</id>
+    <revision>
+      <text bytes="500">'''Mathematics''' is the study of numbers and structures. Used in [[physics]], [[quantum mechanics]], and [[science]].</text>
+    </revision>
+  </page>
+
+  <!-- Should be skipped (non-article namespace) -->
+  <page>
+    <title>Wikipedia:About</title>
+    <ns>4</ns>
+    <id>99</id>
+    <revision>
+      <text bytes="100">This page should be skipped.</text>
+    </revision>
+  </page>
+</mediawiki>
