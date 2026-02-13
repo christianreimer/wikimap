@@ -136,5 +136,6 @@ func importanceThreshold(zoom, maxZoom int) float64 {
 	if maxZoom == 0 {
 		return 0
 	}
-	return math.Pow(10, -float64(zoom+1)/float64(maxZoom+1)*3)
+	// At zoom 0, show top nodes (threshold ~0.01); at maxZoom, show all (threshold ~0)
+	return math.Pow(10, -2-float64(zoom)/float64(maxZoom)*2)
 }

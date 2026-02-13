@@ -4,13 +4,13 @@ export class Camera {
   zoom = 0;
 
   private static MIN_ZOOM = 0;
-  private static MAX_ZOOM = 18;
+  private static MAX_ZOOM = 4; // Match max generated tile zoom
 
   pan(dx: number, dy: number, screenW: number, screenH: number): void {
     const scale = Math.pow(2, this.zoom);
     const tileSize = Math.min(screenW, screenH);
-    this.x += dx / (tileSize * scale);
-    this.y += dy / (tileSize * scale);
+    this.x -= dx / (tileSize * scale);
+    this.y -= dy / (tileSize * scale);
   }
 
   zoomBy(delta: number, screenX: number, screenY: number, screenW: number, screenH: number): void {

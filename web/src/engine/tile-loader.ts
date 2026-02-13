@@ -31,6 +31,9 @@ export class TileLoader {
       this.accessOrder.push(key);
       this.evict();
       return data;
+    }).catch(() => {
+      this.pending.delete(key);
+      return { nodes: [], edges: [] } as TileData;
     });
 
     this.pending.set(key, pending);

@@ -2,6 +2,7 @@ import { NODE_VERTEX, NODE_FRAGMENT, EDGE_VERTEX, EDGE_FRAGMENT } from './shader
 import type { Camera } from '../engine/camera';
 import type { TileData } from '../types/tile';
 import type { TileCoord } from '../engine/camera';
+import type { Theme } from '../theme';
 
 const CLUSTER_COLORS: [number, number, number][] = [
   [0.90, 0.30, 0.30], [0.30, 0.70, 0.90], [0.40, 0.80, 0.40],
@@ -32,14 +33,14 @@ export class MapRenderer {
     this.gl.viewport(0, 0, this.canvas.width, this.canvas.height);
   }
 
-  render(camera: Camera, tileEntries: { coord: TileCoord; data: TileData }[]): void {
+  render(camera: Camera, tileEntries: { coord: TileCoord; data: TileData }[], theme: Theme): void {
     const gl = this.gl;
-    gl.clearColor(0.97, 0.97, 0.97, 1.0);
+    gl.clearColor(theme.bg[0], theme.bg[1], theme.bg[2], 1.0);
     gl.clear(gl.COLOR_BUFFER_BIT);
 
     const proj = this.projectionMatrix(camera);
 
-    this.renderEdges(gl, proj, tileEntries);
+    this.renderEdges(gl, proj, tileEntries, theme);
     this.renderNodes(gl, proj, tileEntries);
   }
 
@@ -49,7 +50,7 @@ export class MapRenderer {
     const sx = (tileSize * scale * 2) / this.canvas.width;
     const sy = (tileSize * scale * 2) / this.canvas.height;
     const tx = -cam.x * sx;
-    const ty = -cam.y * sy;
+    const ty = cam.y * sy;
     return [sx, 0, 0, 0, -sy, 0, tx, ty, 1];
   }
 
@@ -98,11 +99,17 @@ export class MapRenderer {
     gl: WebGLRenderingContext,
     proj: number[],
     tileEntries: { coord: TileCoord; data: TileData }[],
+    theme: Theme,
   ): void {
     gl.useProgram(this.edgeProgram);
 
     const uProj = gl.getUniformLocation(this.edgeProgram, 'u_projection');
     gl.uniformMatrix3fv(uProj, false, proj);
+
+    const uColor = gl.getUniformLocation(this.edgeProgram, 'u_color');
+    gl.uniform3f(uColor, theme.edgeColor[0], theme.edgeColor[1], theme.edgeColor[2]);
+    const uBaseOpacity = gl.getUniformLocation(this.edgeProgram, 'u_baseOpacity');
+    gl.uniform1f(uBaseOpacity, theme.edgeOpacity);
 
     const positions: number[] = [];
     const opacities: number[] = [];

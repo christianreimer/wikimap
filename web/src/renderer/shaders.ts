@@ -50,9 +50,11 @@ export const EDGE_VERTEX = `
 
 export const EDGE_FRAGMENT = `
   precision mediump float;
+  uniform vec3 u_color;
+  uniform float u_baseOpacity;
   varying float v_opacity;
 
   void main() {
-    gl_FragColor = vec4(0.5, 0.5, 0.5, v_opacity * 0.3);
+    gl_FragColor = vec4(u_color, v_opacity * u_baseOpacity);
   }
 `;
